@@ -1,12 +1,15 @@
 body {
+    background-image: url('background.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
     background-color: #f0f8ff;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Arial', cursive, sans-serif;
     text-align: center;
     padding: 20px;
 }
 
 h1 {
-    color: #ff69b4;
+    color: #f0f8ff;
     margin-bottom: 40px;
 }
 
@@ -17,45 +20,36 @@ h1 {
     gap: 20px;
 }
 
-.kawaii-button {
-    background-color: #ffb6c1;
+/* Styles for the color picker */
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 200px; /* Width of the color picker */
+    height: 200px; /* Height of the color picker */
     border: none;
-    border-radius: 20px;
-    padding: 15px 30px;
-    color: white;
-    font-size: 18px;
+    border-radius: 50%; /* Makes the color picker round */
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
 }
 
-.kawaii-button:hover {
-    background-color: #ff69b4;
-    transform: translateY(-5px);
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+input[type="color"]:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
 }
-
-.kawaii-button:active {
-    background-color: #ff1493;
-}
-
-.kawaii-button span {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.kawaii-button:hover span {
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .kawaii-button {
-        font-size: 16px;
-        padding: 12px 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .kawaii-button {
-        font-size: 14px;
-        padding: 10px 

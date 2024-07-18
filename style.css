@@ -2,7 +2,7 @@ body {
     background-image: url('background.png'); /* Remplacez par le chemin de votre image */
     background-size: cover;
     background-position: center;
-    background-color: #f0f8ff;
+    background-color: #000000;
     font-family: 'Arial', cursive, sans-serif;
     text-align: center;
     padding: 20px;
@@ -53,3 +53,4 @@ input[type="color"]:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     transform: translateY(-5px);
 }
+

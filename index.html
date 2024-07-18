@@ -6,13 +6,13 @@
     <title >Lampe RGB Centre de pilotage</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body> 
     
     
     <div class="color-picker-container">
         <div class="color-picker">
             <input type="color" id="colorPicker" value="#ff0000" oninput="sendColor()">
+            <input type="range" id="brightness" min="0" max="100" oninput="adjustBrightness()" />
         </div>
         
     </div>
@@ -21,3 +21,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
